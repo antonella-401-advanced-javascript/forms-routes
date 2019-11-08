@@ -5,13 +5,13 @@ const Character  = ({ character }) => {
   return (
     <div>
       <img src={character.photoUrl}/>
-      <span>{character.name}</span>
+      <p>{character.name}</p>
     </div>
   );
 };
 
 Character.propTypes = {
-  character: PropTypes.object.isRequired
+  character: PropTypes.object
 };
 
 export default Character;

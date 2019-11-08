@@ -14,7 +14,7 @@ export default class Form extends Component {
     return (
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="character name" value={name} onChange={handleChange}></input>
-        <button>SEARCH</button>
+        <button onClick={handleSubmit}>SEARCH</button>
       </form>
     );
   }

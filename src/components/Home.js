@@ -31,6 +31,7 @@ export default class Home extends Component {
     event.preventDefault();
     this.props.history.push(`/list/${this.state.name}`);
   }
+
   handleChange = ({ target }) => {
     this.setState({ name: target.value });
   }
@@ -51,3 +52,7 @@ export default class Home extends Component {
     );
   }
 }
+
+Home.propTypes = {
+  history: PropTypes.object.isRequired
+};
