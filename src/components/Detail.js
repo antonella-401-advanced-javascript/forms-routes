@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import getCharacter from '../../services/avatarApi';
 import DetailedCharacter from './DetailedCharacter';
+import styles from './Detail.css';
 
 export default class Detail extends Component {
   static propTypes = {
@@ -22,7 +23,9 @@ export default class Detail extends Component {
 
     return (
       <>
-        <DetailedCharacter character={this.state.character} />
+        <div className={styles.Detail}>
+          <DetailedCharacter character={this.state.character} />
+        </div>
       </>
     );
   }

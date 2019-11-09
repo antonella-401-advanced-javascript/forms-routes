@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Character from './Character';
 import { Link, withRouter } from 'react-router-dom';
+import styles from './CharacterList.css';
 
 const Characters = ({ characters }) => {
   const list = characters.map((character) => {
@@ -13,7 +14,7 @@ const Characters = ({ characters }) => {
   });
 
   return (
-    <ul>
+    <ul className={styles.CharacterList}>
       {list}
     </ul>
   );

@@ -1,0 +1,7 @@
+.Detail {
+  height: 40%;
+  max-height: 500px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,30 @@
+.CharacterList {
+  height: 40%;
+  max-height: 500px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  ul {
+    width: 90%;
+    margin: auto;
+  }
+
+  li {
+    width: 70%;
+    max-width: 400px;
+    list-style: none;
+    background-color: #01092ba6;
+    border-color: rgba(8, 8, 50, 0.74);
+    border-radius: 3px;
+    margin: 5px;
+    padding-top: 5px;
+  }
+
+  li:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 3px rgba(7, 7, 48, 0.753);
+  }
+}

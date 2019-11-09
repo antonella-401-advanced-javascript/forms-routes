@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import getCharacter from '../../services/avatarApi';
 import Characters from './CharacterList';
 import Form from './Form';
+import styles from './List.css';
 
 export default class List extends Component {
   static propTypes = {
@@ -38,13 +39,15 @@ export default class List extends Component {
     const { data, name } = this.state;
     return (
       <>
-        <h1>List</h1>
-        <Form
-          handleSubmit={this.handleSubmit}
-          handleChange={this.handleChange}
-          name={name}
-        />
-        <Characters characters={data}/>
+        <div className={styles.List}>
+          <h1>List</h1>
+          <Form
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}
+            name={name}
+          />
+          <Characters characters={data}/>
+        </div>
       </>
   
     );
