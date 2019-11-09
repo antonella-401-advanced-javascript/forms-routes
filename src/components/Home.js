@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import getCharacter from '../../services/avatarApi';
 import Character from './Character';
 import Form from './Form';
+import styles from './Home.css';
 
 export default class Home extends Component {
   static propTypes = {
@@ -40,14 +41,17 @@ export default class Home extends Component {
     const { data, name } = this.state;
     return (
       <>
-        <h1>Home</h1>
-        <Character character={data}/>
-        <button onClick={this.handleClick}>New Character</button>
-        <Form
-          handleSubmit={this.handleSubmit}
-          handleChange={this.handleChange}
-          name={name}
-        />
+        <div className={styles.Home}>
+          <h1>Home</h1>
+          <Character character={data}/>
+          <button onClick={this.handleClick}>New Character</button>
+          <Form
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}
+            name={name}
+          />
+        </div>
+        
       </>
     );
   }

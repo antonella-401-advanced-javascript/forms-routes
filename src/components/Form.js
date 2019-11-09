@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import styles from './Form.css';
 
 
 export default class Form extends Component {
@@ -12,7 +13,7 @@ export default class Form extends Component {
   render() {
     const { handleSubmit, handleChange, name } = this.props;
     return (
-      <form onSubmit={handleSubmit}>
+      <form className={styles.Form} onSubmit={handleSubmit}>
         <input type="text" placeholder="character name" value={name} onChange={handleChange}></input>
         <button onClick={handleSubmit}>SEARCH</button>
       </form>

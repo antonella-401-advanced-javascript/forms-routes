@@ -1,0 +1,15 @@
+.Form {
+  width: 100%;
+  margin: 2px auto;
+  display: flex;
+  flex-direction: row;
+
+  input {
+    width: 70%;
+    max-width: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    margin: 0 10px 0 0;
+    height: 20px;
+  }
+}

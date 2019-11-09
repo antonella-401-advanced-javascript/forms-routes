@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from './Footer.css';
 
 const Footer = () => (
-  <footer>&copy; ANTONELLA</footer>
+  <footer className={styles.Foot}>&copy; ANTONELLA</footer>
 );
 
 export default Footer;
