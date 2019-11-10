@@ -1,0 +1,23 @@
+html {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	background-color: #3a677c8c;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+div.root {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+ul {
+	padding: 0;
+}
