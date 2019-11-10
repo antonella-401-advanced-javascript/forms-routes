@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character component renders Character 1`] = `
+<div
+  className="Character"
+>
+  <div>
+    <img
+      src="https://www.outbrain.com/techblog/wp-content/uploads/2017/05/road-sign-361513_960_720.jpg"
+    />
+  </div>
+  <p>
+    test
+  </p>
+</div>
+`;

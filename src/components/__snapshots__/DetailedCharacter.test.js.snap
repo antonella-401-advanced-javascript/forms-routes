@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailedCharacter component renders DetailedCharacter 1`] = `
+<div
+  className="DetailedCharacter"
+>
+  <div>
+    <img
+      src="https://www.outbrain.com/techblog/wp-content/uploads/2017/05/road-sign-361513_960_720.jpg"
+    />
+  </div>
+  <p>
+    test2
+  </p>
+  <p>
+    Gender: 
+    test
+  </p>
+  <p>
+    Hair Color: 
+    test color
+  </p>
+  <p>
+    Weapon/Attack: 
+    tests
+  </p>
+  <p>
+    Affiliation: 
+    test?
+  </p>
+</div>
+`;
